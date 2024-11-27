@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="main">
+        <div class="top-div">
+            <h1 class="title">devfinder</h1>
+            <div class="dark-or-light-div">
+                <p class="dark-text">DARK</p>
+                <p class="light-text">LIGHT</p>
+                <img src="./images mob/moon.svg" id="moon">
+                <img src="./images mob/002-sun.svg" id="sun">
+            </div>
+        </div>
+        <div class="search-container">
+            <img src="./images mob/Shape 2.svg" class="search-icon">
+            <input type="search" placeholder="Search GitHub username…" id="search-input">
+            <p id="no-result">No results</p>
+            <button id="search-button">Search</button>
+        </div>
+
+
+        <div class="main-content">
+            <div class="main-content-head">
+                <img src="./images mob/Oval.svg" id="user-img">
+                <div class="main-info">
+                    <p id="user-name">The Octocat</p>
+                    <p id="user-tag">@octocat</p>
+                    <p id="user-joined">Joined 25 Jan 2011</p>
+                </div>
+            </div>
+            <div class="about-user">
+                <p class="user-info">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque
+                    volutpat mattis eros.</p>
+                <div class="user-followers">
+                    <div class="repos">
+                        <p class="repos2">repos</p>
+                        <p id="repos-num" class="num">8</p>
+                    </div>
+                    <div class="followers">
+                        <p class="followers2">followers</p>
+                        <p id="followers-num" class="num">3938</p>
+                    </div>
+                    <div class="following">
+                        <p class="following2">following</p>
+                        <p id="following-num" class="num">9</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="user-other-info">
+                <div class="top-ones">
+                    <div class="location-div">
+                        <img src="./images mob/003-pin.svg" id="location-icon">
+                        <p id="location" class="txt">San Francisco</p>
+                    </div>
+                    <div class="link-div">
+                        <img src="./images mob/002-url.svg" id="link-icon">
+                        <a id="user-url" class="txt" href="">https://github.blog</a>
+                    </div>
+                </div>
+                <div class="bottom-ones">
+                    <div class="twitter-div">
+                        <img src="./images mob/004-twitter.svg" id="twitter-icon">
+                        <p id="twitter-txt" class="txt">Not Avaliable</p>
+                    </div>
+                    <div class="github-div">
+                        <img src="./images mob/001-office-building.svg" id="github-icon">
+                        <a id="ragaca" class="txt" href="">@github</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

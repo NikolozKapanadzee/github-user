@@ -1,0 +1,462 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(246, 248, 255, 1);
+    display: flex;
+    flex-direction: column;
+    font-family: "Space Mono", monospace;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.top-div {
+    display: flex;
+    max-height: 38px;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+.dark-or-light-div {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.dark-text {
+    font-family: Space Mono;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 19.25px;
+    letter-spacing: 2.5px;
+    text-align: right;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    width: 40px;
+    color: rgba(75, 106, 155, 1);
+
+}
+
+.title {
+    font-family: Space Mono;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 38.51px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    width: 128px;
+    color: rgba(34, 39, 49, 1);
+
+}
+
+.search-container {
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin: auto;
+    width: 90%;
+    margin-top: 30px;
+}
+
+#search-input {
+    height: 60px;
+    width: 100%;
+    border: none;
+    border-radius: 15px;
+    padding-left: 45px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.search-icon {
+    position: absolute;
+    left: 3%;
+}
+
+#search-button {
+    position: absolute;
+    font-family: Space Mono;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20.73px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: rgba(255, 255, 255, 1);
+    width: 84px;
+    height: 46px;
+    background-color: rgb(0, 121, 255);
+    border: none;
+    border-radius: 10px;
+    right: 2%;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    border-radius: 15px;
+    gap: 30px;
+}
+
+.main-content-head {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+#user-name {
+    font-family: Space Mono;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 23.7px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    width: 108px;
+    color: rgba(43, 52, 66, 1);
+
+}
+
+#user-tag {
+    font-family: Space Mono;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 19.25px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: rgba(0, 121, 255, 1);
+    width: 64px;
+
+}
+
+#user-joined {
+    font-family: Space Mono;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 19.25px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: rgba(105, 124, 154, 1);
+    width: 144px;
+
+}
+
+.user-info {
+    font-family: Space Mono;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: rgba(75, 106, 155, 1);
+    width: 279px;
+
+}
+
+.user-followers {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(246, 248, 255);
+    align-items: center;
+    width: 279px;
+    height: 85px;
+    justify-content: center;
+    gap: 30px;
+    border-radius: 15px;
+
+}
+
+.repos,
+.followers,
+.following {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.about-user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.repos2,
+.followers2,
+.following2 {
+    font-size: 11px;
+    color: rgba(75, 106, 155, 1);
+
+}
+
+.num {
+    font-size: 16px;
+    color: rgba(43, 52, 66, 1);
+
+}
+
+.user-other-info {
+    display: flex;
+    flex-direction: column;
+    gap: 17.5px;
+    padding-bottom: 60px;
+    margin: 0 auto;
+    max-width: 90%;
+}
+
+.top-ones {
+    display: flex;
+    flex-direction: column;
+    gap: 17.5px;
+}
+
+.bottom-ones {
+    display: flex;
+    flex-direction: column;
+    gap: 17.5px;
+}
+
+.location-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.link-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.twitter-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.github-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.txt {
+    font-family: Space Mono;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 19.25px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: rgba(75, 106, 155, 1);
+}
+
+#moon {
+    cursor: pointer;
+}
+
+#sun {
+    display: none;
+    cursor: pointer;
+}
+
+.light-text {
+    display: none;
+    font-family: Space Mono;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 19.25px;
+    letter-spacing: 2.5px;
+    text-align: right;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: rgba(255, 255, 255, 1);
+}
+
+#twitter-txt {
+    font-family: Space Mono;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22.22px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: rgba(75, 106, 155, 1);
+
+}
+
+#search-button {
+    cursor: pointer;
+}
+
+#search-button:active {
+    background-color: rgb(51, 153, 255);
+}
+
+#no-result {
+    position: absolute;
+    left: 40%;
+    font-family: Space Mono;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 22.22px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: rgba(247, 70, 70, 1);
+    display: none;
+
+}
+
+@media(min-width:768px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .main {
+        width: 573px;
+        height: 648px;
+        margin: auto;
+    }
+
+    #user-img {
+        width: 117px;
+        height: 117px;
+    }
+
+    .user-other-info {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 70px;
+    }
+
+    .user-followers {
+        width: 493px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 140px;
+    }
+
+    .user-info {
+        width: 470px;
+        height: 50px;
+    }
+
+    #user-name {
+        width: 176px;
+
+    }
+
+    #user-tag {
+        width: 79px;
+        height: 24px;
+    }
+
+    #user-joined {
+        width: 166px;
+        height: 22px;
+    }
+
+    .main-info {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .main-content-head {
+        margin: 0;
+        padding-left: 20px;
+        margin-top: 35px;
+    }
+
+    .search-container {
+        position: relative;
+    }
+
+    #no-result {
+        position: absolute;
+        left: 60%;
+        font-family: Space Mono;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 22.22px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: rgba(247, 70, 70, 1);
+        display: none;
+    }
+}
+
+@media(min-width:1440px) {
+    .main-content {
+        width: 730px;
+    }
+
+    .search-container {
+        width: 730px;
+    }
+
+    .top-div {
+        width: 730px;
+    }
+
+    .main-content-head {
+        margin-left: 35px;
+    }
+
+    .user-info {
+        margin-left: 140px;
+    }
+
+    .user-followers {
+        margin-left: 140px;
+    }
+
+    .user-other-info {
+        margin-left: 190px;
+    }
+
+    #search-input {
+        padding-left: 60px;
+    }
+
+    #no-result {
+        left: 70%;
+        display: none;
+    }
+}
